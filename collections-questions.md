@@ -262,6 +262,7 @@ ArrayList and LinkedList both implements List interface and maintains insertion 
 | 02. |Manipulation with ArrayList is slow because it internally uses an array. If any element is removed from the array, all the bits are shifted in memory.	|Manipulation with LinkedList is faster than ArrayList because it uses a doubly linked list, so no bit shifting is required in memory.|
 | 03. |An ArrayList class can act as a list only because it implements List only.|	LinkedList class can act as a list and queue both because it implements List and Deque interfaces.|
 | 04. | ArrayList is better for storing and accessing data.|LinkedList is better for manipulating data.|
+| 05. | ArrayList maintains the insertion order of the elements..|LinkedList maintains the insertion order of the elements.|
 
 ```java
 // Java program to demonstrate difference between ArrayList and 
