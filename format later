@@ -1,0 +1,42 @@
+1) Convert List to Map using Java 8 syntax.
+2) Tree Map with custom key.
+3) Comparable vs Comparator
+4)Why to use iterator ?
+5) Types of map and their difference
+6)Default garbage collectors:
+
+Java 7 - Parallel GC (Stop the world )
+Java 8 - Parallel GC
+7)Can an abstract class have a constructor?
+8)How to create immutable class?
+9)what springapplication.run does
+10)To access the application context, we can autowire the ApplicationContext interface or implement the ApplicationContextAware.
+11) reentrant locks https://www.baeldung.com/java-synchronized
+12)Map and flatmap
+List<Integer> in = Stream.of(Arrays.asList(1, 2), Arrays.asList(3, 4)) // Stream of List<Integer>
+				.flatMap(List::stream).map(integer -> integer + 1).collect(Collectors.toList());
+				
+				Optional opt = Optional.ofNullable(null);
+
+opt.ifPresentOrElse(value -> System.out.println("Found: " + value), () -> System.out.println("Not found"));
+
+13)POST means "create new" as in "Here is the input for creating a user, create it for me".
+
+PUT means "insert, replace if already exists" as in "Here is the data for user 5"
+PUT is an idempotent method while POST is not
+
+
+14)EnableEurekaClient .In properties file
+15)zuul gateway (now use spring cloud gateway ) :- serviceid and url
+
+16) Mockito annotations
+@Mock
+when(method call).thenreturn();
+assertequals
+verify:  verify() method can be used to test number of method invocations too
+Mockmvc
+InjectMocks
+@Extenwith(MockitoExtension.class)
+ThenThrow
+
+https://gist.github.com/psayre23/c30a821239f4818b0709
