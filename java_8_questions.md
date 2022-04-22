@@ -157,7 +157,7 @@ public  static  List < String > sort ( List < String > list) {
 
 ## Q. What is a method reference?
 
-If the method existing in the class already does everything that is necessary, then you can use the method reference mechanism (method reference) to directly pass this method. The result will be exactly the same as in the case of defining a lambda expression that calls this method.
+Java provides a new feature called method reference in Java 8. Method reference is used to refer method of functional interface. It is compact and easy form of lambda expression. Each time when you are using lambda expression to just referring a method, you can replace your lambda expression with method reference. In this tutorial, we are explaining method reference concept in detail.
 ```java
 private  interface  Measurable {
     public  int  length ( String  string );
