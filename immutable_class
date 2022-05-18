@@ -1,0 +1,51 @@
+
+public class Immutable {
+
+	private String name;
+
+	private Employee employee;
+
+	public Immutable(String name, Employee employee) {
+		super();
+		this.name = name;
+		Employee emp = new Employee(this.employee.getId());
+		emp.setId(this.employee.getId());
+		this.employee = emp;
+	}
+
+	public Employee getBook() {
+		// Do not return the Employee, but a new copy. Do not want the readers
+		// Employee to change it's state if developer changes book after this call.
+		Employee empCopy = new Employee(this.employee.getId());
+		empCopy.setId(this.employee.getId());
+		return empCopy;
+	}
+
+	public String getName() {
+		return name;
+	}
+  }
+  
+  ================================
+  
+  public class Employee {
+	
+	
+	
+	Integer id;
+	
+
+	public Employee(Integer id) {
+		super();
+		this.id = id;
+	}
+  	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+  }
+  
+  
