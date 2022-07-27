@@ -7,7 +7,7 @@ a)Don't provide methods that modify the mutable objects.
 b)Don't share references to the mutable objects.
 c)Never store references to external, mutable objects passed to the constructor; if necessary, create copies, and store references to the copies. 
 Similarly, create copies of your internal mutable objects when necessary to avoid returning the originals in your methods.
-public class Immutable {
+public final class Immutable {
 
 	private String name;
 
