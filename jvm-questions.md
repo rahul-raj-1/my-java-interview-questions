@@ -3,6 +3,7 @@
 
 1)Explain JVM architecture 
 Ans 1) https://www.youtube.com/watch?v=bspS-uTK0IM
+https://www.youtube.com/watch?v=DXykPdFt1KY&t=239s
 
  Can one class be loaded by two different ClassLoader in Java ?
  class is always identified using its fully qualified name (package.classname). So when a class is loaded into JVM, you have an entry as (package, classname, classloader). Therefore the same class can be loaded twice by two different ClassLoader instances.
